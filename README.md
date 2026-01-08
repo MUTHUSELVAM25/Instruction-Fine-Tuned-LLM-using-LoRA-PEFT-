@@ -65,3 +65,15 @@ LoRA updates only small low-rank matrices in attention layers, enabling efficien
   - Generates meaningful answers
   - Responds differently based on input constraints
   - This confirms successful instruction tuning.
+
+---
+
+🖥️ Gradio Demo
+
+An interactive Gradio UI allows users to:
+
+  - Enter an instruction
+  - Provide optional constraints
+  - Observe real-time model responses
+
+This makes the project suitable for demos and portfolios.
