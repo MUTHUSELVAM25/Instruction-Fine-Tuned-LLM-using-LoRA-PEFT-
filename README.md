@@ -77,3 +77,13 @@ An interactive Gradio UI allows users to:
   - Observe real-time model responses
 
 This makes the project suitable for demos and portfolios.
+
+---
+
+📈 Learning Outcomes
+
+  - Instruction tuning concepts
+  - LoRA / PEFT fine-tuning
+  - Prompt formatting for LLMs
+  - Decoding strategies for text generation
+  - Deploying LLMs with Gradio
