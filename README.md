@@ -56,12 +56,12 @@ LoRA updates only small low-rank matrices in attention layers, enabling efficien
 🧪 Base Model vs Fine-Tuned Model
 
 ❌ Base Model (Without LoRA)
-  Repeats prompt structure
-  Does not follow instructions
-  Produces incoherent or looping outputs
+  - Repeats prompt structure
+  - Does not follow instructions
+  - Produces incoherent or looping outputs
 
 ✅ LoRA Fine-Tuned Model
-  Understands instruction–response format
-  Generates meaningful answers
-  Responds differently based on input constraints
-  This confirms successful instruction tuning.
+  - Understands instruction–response format
+  - Generates meaningful answers
+  - Responds differently based on input constraints
+  - This confirms successful instruction tuning.
