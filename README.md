@@ -39,15 +39,35 @@ The model learns to respond correctly to structured prompts containing:
 
 **Alpaca Dataset** (`tatsu-lab/alpaca`)
 
-Each training example follows this format:
+---
 
-Instruction:
-<Task>
-Input:
-<Optional context>
-Response:
-<Expected answer> ```
+⚙️ Model Architecture
+| Component            | Details                  |
+| -------------------- | ------------------------ |
+| Base Model           | DistilGPT-2              |
+| Fine-Tuning          | LoRA (PEFT)              |
+| Trainable Parameters | < 1%                     |
+| Task Type            | Causal Language Modeling |
 
-This structure helps the model learn instruction alignment instead of prompt repetition.
+LoRA updates only small low-rank matrices in attention layers, enabling efficient training on limited hardware.
 
+---
 
+🧪 Base Model vs Fine-Tuned Model
+❌ Base Model (Without LoRA)
+
+Repeats prompt structure
+
+Does not follow instructions
+
+Produces incoherent or looping outputs
+
+✅ LoRA Fine-Tuned Model
+
+Understands instruction–response format
+
+Generates meaningful answers
+
+Responds differently based on input constraints
+
+This confirms successful instruction tuning.
